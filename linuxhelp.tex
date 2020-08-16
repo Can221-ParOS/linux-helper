@@ -95,7 +95,7 @@ Package Management is one of the most important and powerful aspects of Linux Op
 
 Arch based distros (Manjaro, Artix and others) are \textit{rolling release}. This means that as updates are released by the developers, they are available to the user immediately (\textit{Somewhat immediately}, as manjaro and certain arch repositories hold back updates a few weeks for testing stability and patching bugs). It is best practice to update your system before installing new software, to ensure all the other things it relies on are up to date. I will go over only the pacman commands, as they are the same as the yay package manager commands.
 
-\textbf{pacman -Syyu} this will sync your package mirrors to ensure they are up to date, and then update all packages on the system (including the kernel, and other OS packages. \textbf{pacman -S package-name} installs the package "package-name", if it exists. \textbf{pacman -R pacage-name} removes "package-name" if it is installed on the system. \textbf{pacman -Ss key words} searches the repository for packages related to "key words".
+\textbf{pacman -Syyu} this will sync your package mirrors to ensure they are up to date, and then update all packages on the system including the kernel, and other OS packages. \textbf{pacman -S package-name} installs the package "package-name", if it exists. \textbf{pacman -R pacage-name} removes "package-name" if it is installed on the system. \textbf{pacman -Ss key words} searches the repository for packages related to "key words".
 
 \textbf{pacman -Sy} \textbf{\textit{Do not use this command. It leaves your system in a partially upgraded state, which can break the system on the next update. Use }pacman -Syu or pacman -Syyu instead}
 
