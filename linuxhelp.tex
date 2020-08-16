@@ -6,7 +6,7 @@
 \graphicspath{ {images/} }
 
 \title{Getting Comfy in the Command Line}
-\author{Can221-ParOS \thanks{Huge thanks to Luke Smith, DistroTube, and Mental Outlaw. They are where I gained my immense interest in Linux. You can find their channels on Youtube by searching their names.}}
+\author{Can221-ParOS \thanks{Huge thanks to \href{https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA}{Luke Smith}, \href{https://www.youtube.com/channel/UCVls1GmFKf6WlTraIb_IaJg}{DistroTube}, and \href{https://www.youtube.com/channel/UC7YOGHUfC1Tb6E4pudI9STA}{Mental Outlaw}. They are where I gained my immense interest in Linux.}}
 \date{August 14, 2020}
 
 \begin{document}
@@ -38,11 +38,11 @@ This section focuses on navigating through files in the Terminal. We will go ove
 
 An example of \textbf{ls} can be seen in figure \ref{figure:image2}, at the end of this section.
 
-\textbf{cd} : Changes the current directory. You can use the full path to a file using \textbf{cd /full/path}. If the file is in the ~/ folder, you can use \textbf{~/folder}. If the file is inside of the current directory, you can also simply use \textbf{cd file}. cd also has very useful built in shortuts : \textbf{cd ~} will take you to your home directory, and \textbf{cd -} will take you right back into the last folder you cd'd into.  
+\textbf{cd} : Changes the current directory. You can use the full path to a file using \textbf{cd /full/path}. If the file is in the $\mathtt{\sim}$/ folder, you can use \textbf{$\mathtt{\sim}$/folder}. If the file is inside of the current directory, you can also simply use \textbf{cd file}. cd also has very useful built in shortuts : \textbf{cd $\mathtt{\sim}$} will take you to your home directory, and \textbf{cd -} will take you right back into the last folder you cd'd into. 
 
 An example of \textbf{cd} can also be seen below, in figure\ref{figure:image3}.
 
-\textbf{file} : Tells you the type of file that you specify. Useful to help identify if a file is a directory, text, or an executable. For example, if I was in the ~/ directory and wanted to figure out was type of file Documents is I would use \textbf{file Documents}
+\textbf{file} : Tells you the type of file that you specify. Useful to help identify if a file is a directory, text, or an executable. For example, if I was in the Home directory and wanted to figure out was type of file Documents is I would use \textbf{file Documents}
 
 As with the others, there is an example of the file command in use seen below, in figure \ref{figure:image4}.
 
@@ -67,7 +67,7 @@ As with the others, there is an example of the file command in use seen below, i
 
 This section will go over managing your files in linux, and the commands used to create and remove files, and the tricks that make it easier and faster.
 
-\textbf{mkdir file} will create a directory named "file" in the current working directory. To make a file in a specified location, use the path to the desired file before the directory you want to make. For example, \textbf{mkdir ~/Documents/Media} will create a directory named "Media" inside the ~/Documents directory. An example can be seen in figure \ref{figure:mkdirex} below.
+\textbf{mkdir file} will create a directory named "file" in the current working directory. To make a file in a specified location, use the path to the desired file before the directory you want to make. For example, \textbf{mkdir $\mathtt{\sim}$/Documents/Media} will create a directory named "Media" inside the $\mathtt{\sim}$/Documents directory. An example can be seen in figure \ref{figure:mkdirex} below.
 
 \textbf{rm file} deletes "file". To remove a directory, you need to use \textbf{rm -rf directory}. \textbf{\textit{Use rm carefully. It does not send files to the recycle bin, it deletes them immidiately.}}. The special character \textbf{*} can be used to delete all files in the current directory, \textbf{\textit{this is very useful, but also very dangerous.}} An example of \textbf{*} pattern matching to delete a specific group of files can be seen below in figure \ref{figure:rmpatex}. 
 
@@ -82,7 +82,7 @@ This section will go over managing your files in linux, and the commands used to
 \endminipage
 \end{figure}
 
-\textbf{Linux Filestructure} - A brief explanation of the structure of the filesystem in linux. \textbf{/home/username or ~/} is where the user files are stored, and the user does not need to use sudo to modify these files. The files in the \textbf{/ or root} directory are system files, configuration defaults, and some application files. To modify files in the \textbf{/ or root} directory, you need to use sudo and enter your password, because those files are owned by the root account. This is one of the things that makes linux such a secure OS.
+\textbf{Linux Filestructure} - A brief explanation of the structure of the filesystem in linux. \textbf{/home/username or "$\mathtt{\sim}$/"} is where the user files are stored, and the user does not need to use sudo to modify these files. The files in the \textbf{/ or root} directory are system files, configuration defaults, and some application files. To modify files in the \textbf{/ or root} directory, you need to use sudo and enter your password, because those files are owned by the root account. This is one of the things that makes linux such a secure OS.
 
 A great video about the Linux filesystem can be found here: 
 (Double-click to open link)
